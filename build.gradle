@@ -10,7 +10,18 @@ base {
 	archivesName = mod_comp_name
 }
 
-repositories {}
+repositories {
+	maven {
+		name = 'ParchmentMC'
+		url = 'https://maven.parchmentmc.org'
+	}
+	maven {
+		url "https://www.cursemaven.com"
+		content {
+			includeGroup "curse.maven"
+		}
+	}
+}
 
 
 loom {
